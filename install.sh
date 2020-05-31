@@ -1,5 +1,5 @@
 #!/bin/bash -e
-# Name : teseABA
+# Name : Auto install qt5
 # Author : HTMLDigger.in
 # create date : 29.05.2020
 
