@@ -1,11 +1,11 @@
 #!/bin/bash -e
-# Name : Auto install qt5
+# Name : teseABA
 # Author : HTMLDigger.in
 # create date : 29.05.2020
 
 clear
 
-Name='Auto install qt5' 
+Name='taseABA' 
 sver='1.5'
 Author='HTMLDigger'
 os=`uname -sm`
@@ -113,6 +113,7 @@ then
     sudo apt-get install python3-pyqt5 -y
     sudo apt-get install pyqt5-dev-tools -y
     sudo apt-get install qttools5-dev-tools -y
+    sudo pip3 install PyInstaller -y
     echo -e "$done $os $NOWTIME"
 fi
 if [ $ans = "n" ] || [ $ans = "N" ]
