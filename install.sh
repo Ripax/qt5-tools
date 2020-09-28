@@ -31,9 +31,9 @@ NOWTIME=$(date +"%r")
 
 # Print my Banner.
 echo -e "${White}*****************************************${clean}"
-echo -e "${Green}╦ ╦╔╦╗╔╦╗╦  ╔╦╗┬┌─┐┌─┐┌─┐┬─┐ ${clean}"
+echo -e "${Yellow}╦ ╦╔╦╗╔╦╗╦  ╔╦╗┬┌─┐┌─┐┌─┐┬─┐ ${clean}"
 echo -e "${White}╠═╣ ║ ║║║║   ║║││ ┬│ ┬├┤ ├┬┘ ${clean}"
-echo -e "${Yellow}╩ ╩ ╩ ╩ ╩╩═╝═╩╝┴└─┘└─┘└─┘┴└─ ${clean}"
+echo -e "${Green}╩ ╩ ╩ ╩ ╩╩═╝═╩╝┴└─┘└─┘└─┘┴└─ ${clean}"
 echo -e "${White}*****************************************${clean}"
 # Banner end here.
 
@@ -98,6 +98,8 @@ fi
 read -p "$name Do you want to install QT5 Creator & Designer (Y/N) ? " answ
 if [ $answ = "Y" ] || [ $answ = "y" ]
 then
+    echo "install pip3"
+    sudo apt install python3-pip
     echo -e "Install Qt Creator"
     sudo apt-get install build-essential -y
     echo "successfully install build-essential."
@@ -113,7 +115,7 @@ then
     sudo apt-get install python3-pyqt5 -y
     sudo apt-get install pyqt5-dev-tools -y
     sudo apt-get install qttools5-dev-tools -y
-    sudo pip3 install PyInstaller -y
+    sudo pip3 install PyInstaller
     echo -e "$done $os $NOWTIME"
 fi
 if [ $ans = "n" ] || [ $ans = "N" ]
@@ -121,4 +123,59 @@ then
     echo -e "$can$clean"
     echo -e "${Yellow}Thanks for using $Name Ver:$sver stay tune for update."
     echo "Please visit for more info : https://pyvfx.blogspot.com/"
+fi
+clear
+echo "I have some software for you"
+echo "Python
+sublime text
+gparted
+code
+wethr
+rpi-imager
+"
+read -p "$name Do you want to install all those software ? [y/n] : " softansw
+if [ $softansw = "Y" ] || [ $softansw = "y" ]
+then
+# for sublime text repo added
+
+    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+    echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+
+
+    echo "Installing all nececery software."
+    echo "Python"
+    sudo apt install software-properties-common
+    sudo add-apt-repository ppa:deadsnakes/ppa
+    clear
+    echo "installing python3.8"
+    sleep 5s
+    sudo apt install python3.8
+    sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
+    clear
+
+    echo "installing sublime text"
+    sleep 5s
+    sudo apt-get update
+    sudo apt-get install sublime-text
+    echo "Code"
+    clear
+    sudo apt update
+    sudo apt install software-properties-common apt-transport-https wget
+    wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+    sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+    sudo apt update
+    sudo apt install code
+    clear
+    sleep 5s
+    echo "gparted installing now."
+    sleep 5s
+    sudo apt-get install gparted -y
+    echo "wethr"
+    sudo snap install wethr
+    clear
+    sleep 5s
+
+    echo "Install Raspberry Pi Imager"
+    sudo apt install rpi-imager
+    
 fi
