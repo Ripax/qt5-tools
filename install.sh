@@ -1,12 +1,12 @@
 #!/bin/bash -e
-# Name : teseABA
+# Name : auintall
 # Author : HTMLDigger.in
 # create date : 29.05.2020
 
 clear
 
-Name='taseABA' 
-sver='1.5'
+Name='auintall' 
+sver='1.8'
 Author='HTMLDigger'
 os=`uname -sm`
 
