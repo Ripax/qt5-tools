@@ -1,8 +1,8 @@
-******************************************************************
-*                   After  install fresh ubuntu you have to run this.                       *
-*                                   version : v1.8                                                                         *
-*                   script name :  auintall
-******************************************************************
+#******************************************************************
+#*                   After  install fresh ubuntu you have to run this.                       *
+#*                                   version : v1.8                                                                         *
+#*                   script name :  auintall                                                                         *
+#******************************************************************
 
 Documentation:
 Full details and usage instructions.
@@ -12,9 +12,10 @@ HTMLDigger should build cleanly in code (though you will have to remove code sig
 
 To Install:
 Simply run this script by terminal
-cd your directory
-chmod +x install.sh
-./install.sh
+`cd your directory`
+`chmod +x install.sh`
+`./install.sh`
 
+Please letme know if need to update anything.
 To Support:
 heart  Love this product or want to support it? Please check out my patreon page :)
