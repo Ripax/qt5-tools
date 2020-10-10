@@ -19,7 +19,7 @@ chmod +x install.sh
 
 ```
 ## you want to help me to make this better ? or report me for bug.
-Please contact me :  [email](htmldigger@gmail.com)
+Please contact me :  [email](mailto:htmldigger@gmail.com)
 
 ## update request
 Please letme know if need to update anything.
