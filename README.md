@@ -1,8 +1,8 @@
-#******************************************************************
-#*                   After  install fresh ubuntu you have to run this.                       *
-#*                                   version : v1.8                                                                         *
-#*                   script name :  auintall                                                                         *
-#******************************************************************
+`******************************************************************`
+`*                   After  install fresh ubuntu you have to run this.                       *`
+`*                                   version : v1.8                                                                         *`
+`*                   script name :  auintall                                                                         *`
+`******************************************************************`
 
 Documentation:
 Full details and usage instructions.
